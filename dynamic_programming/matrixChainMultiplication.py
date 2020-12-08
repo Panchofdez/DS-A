@@ -52,6 +52,7 @@ def matrixCM2(dimensions, i, j):
         cost = matrixCM2(dimensions,i, k) + matrixCM2(dimensions, k+1, j) + dimensions[i-1]*dimensions[k]*dimensions[j]
         if cost < minimum:
             minimum = cost
+            M[i][j] = cost
     return minimum
 
 #dimensions for each matrix
