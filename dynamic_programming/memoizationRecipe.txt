@@ -1,0 +1,10 @@
+1. Make it work first. Find a recursive solution (brute force solution)
+ - visualize problem as a tree
+ - each node is a subproblem 
+ - implement tree using recursion 
+ - test it 
+
+2.then solve for efficiency
+ - store solutions to subproblems in a table/memo using memoization where the keys are the arguments
+ - add a base case to return stored values
+ - store return values into our table/memo before returning 
